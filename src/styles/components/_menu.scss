@@ -1,14 +1,16 @@
 .menu {
-
+  padding: 3rem;
+  border-color: black;
+  border-style: solid;
   .menu-headers {
     display: flex;
     list-style-type: none;
     margin-left: 0;
     justify-content: space-between;
-    
+
     @media screen and (min-width: 640px) {
       justify-content: unset;
-      .menu-header:nth-child(n+2) {
+      .menu-header:nth-child(n + 2) {
         margin-left: 20px;
       }
     }
@@ -22,7 +24,9 @@
         line-height: $ms-size;
       }
     }
-    
+    .menu-header:hover {
+      font-weight: bold;
+    }
   }
   .menu-items-grid {
     list-style-type: none;
@@ -30,7 +34,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 0;
-    @media screen and (min-width:640px) {
+    @media screen and (min-width: 640px) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
     }

@@ -1,13 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
     <footer>
-      <section>
+      <section id="contact">
         <div className="address">
-          <h3>WHERE ARE WE?</h3>
+          <h3>LOCATION</h3>
           <span>41 Sunset Way, #01-02</span>
-          <span>Clementi Arcade</span>
           <span>Singapore 597071</span>
         </div>
         <div className="hours">
@@ -18,10 +18,18 @@ const Footer = () => {
         <div className="contact">
           <h3>CONTACT</h3>
           <span>65 6463 0069</span>
-          <span>@sunsetrailway_cafe</span>
+          <Link to="https://www.instagram.com/sunsetrailway_cafe/?hl=en">
+            @sunsetrailway_cafe
+          </Link>
         </div>
       </section>
-      <p>Sonia Susanto &copy; 2020</p>
+      <div className="copyright-container">
+        <p>Sonia Susanto &copy; 2020</p>
+        <p>
+          Disclaimer: This is a front-end UI mockup for a restaurant cafe in
+          Singapore.
+        </p>
+      </div>
     </footer>
   )
 }

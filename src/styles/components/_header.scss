@@ -3,14 +3,26 @@ header {
   z-index: 10;
   height: 50px;
   width: 100%;
-  background-color: $green;
-  color: #fff;
+  background-color: black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  
+  a {
+    text-decoration: none;
+    color: white;
+  }
   span {
     font-size: $ms-size;
+  }
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      color: white;
+    }
   }
 }

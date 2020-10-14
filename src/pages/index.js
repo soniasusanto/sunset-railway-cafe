@@ -19,41 +19,36 @@ const IndexPage = ({ data }) => {
           className="hero-image"
         />
       </section>
-      <section className="container">
-        <span className="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </span>
+      <section className="container" id="about">
+        <div id="about-container">
+          <h2>Sunset Railway Cafe</h2>
+          <p>
+            A local cafe located in Sunset Way. Expect local Kopi and Teh,
+            Gourmet Coffee, Toast, Mee Siam and Laksa. Pulut tekan with kaya,
+            Sugee and Pandan cake.
+          </p>
+        </div>
+        <br></br>
         <div className="gallery-grid">
           <Img
             fluid={data.latte.childImageSharp.fluid}
             className="gallery-img1"
           />
           <Img
-            fluid={data.coffeeBags.childImageSharp.fluid}
+            fluid={data.food.childImageSharp.fluid}
             className="gallery-img2"
           />
           <Img
-            fluid={data.coffeePortrait.childImageSharp.fluid}
+            fluid={data.cafeInterior.childImageSharp.fluid}
             className="gallery-img3"
           />
         </div>
-        <div className="about-grid">
-          <h2>WE'RE CRAZY ABOUT COFFEE</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
       </section>
       <div className="parallax"></div>
-      <section className="container">
+      <section className="container" id="menu">
         <Menu />
+      </section>
+      <section className="container">
         <Instagram />
       </section>
       {typeof window !== "undefined" && (
@@ -80,16 +75,16 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    coffeeShop: file(relativePath: { eq: "coffee-shop-exterior.jpg" }) {
+    coffeeShop: file(relativePath: { eq: "homepage-image.jpg" }) {
       ...fluidImage
     }
-    coffeePortrait: file(relativePath: { eq: "coffee-portrait.jpg" }) {
+    cafeInterior: file(relativePath: { eq: "cafe-interior.jpg" }) {
       ...fluidImage
     }
-    latte: file(relativePath: { eq: "latte.jpg" }) {
+    latte: file(relativePath: { eq: "kopi.jpeg" }) {
       ...fluidImage
     }
-    coffeeBags: file(relativePath: { eq: "coffee-bags.jpg" }) {
+    food: file(relativePath: { eq: "nasi-lemak.jpg" }) {
       ...fluidImage
     }
   }
