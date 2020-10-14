@@ -1,7 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
-const HotDrinks = () => {
+const Extras = () => {
   const items = [
     {
       id: 1,
@@ -13,6 +12,7 @@ const HotDrinks = () => {
     { id: 4, title: "Chicken Rendang", price: "3.00" },
     { id: 5, title: "Otah (1pc)", price: "1.20" },
   ]
+
   return (
     <div>
       {/* <p className="sample">SAMPLE MENU</p> */}
@@ -30,4 +30,4 @@ const HotDrinks = () => {
   )
 }
 
-export default HotDrinks
+export default Extras

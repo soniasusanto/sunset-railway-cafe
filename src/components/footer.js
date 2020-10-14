@@ -1,31 +1,29 @@
-import React from 'react'
+import React from "react"
 
 const Footer = () => {
-
   return (
     <footer>
       <section>
         <div className="address">
           <h3>WHERE ARE WE?</h3>
-          <span>65 Park Row</span>
-          <span>Edinburgh, EH1 4PE</span>
+          <span>41 Sunset Way, #01-02</span>
+          <span>Clementi Arcade</span>
+          <span>Singapore 597071</span>
         </div>
         <div className="hours">
           <h3>HOURS</h3>
-          <span>Weekdays / 8-5</span>
-          <span>Weekdays / 10-5</span>
+          <span>Monday - Wednesday / Closed</span>
+          <span>Thursday - Sunday / 8:00am-3:00pm</span>
         </div>
         <div className="contact">
           <h3>CONTACT</h3>
-          <span>01632 960966</span>
-          <span>@yourSocialName</span>
+          <span>65 6463 0069</span>
+          <span>@sunsetrailway_cafe</span>
         </div>
       </section>
-      <p>Built by
-        <a href="https://crollacreations.com" target="_blank" rel="noopener noreferrer">crollacreations</a>
-      </p>
+      <p>Sonia Susanto &copy; 2020</p>
     </footer>
   )
 }
 
-export default Footer;
+export default Footer
