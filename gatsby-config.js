@@ -1,9 +1,3 @@
-const dotenv = require("dotenv")
-
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config()
-}
-
 module.exports = {
   siteMetadata: {
     title: `Sunset Railway Cafe`,
@@ -30,17 +24,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.CONTENTFUL_SPACEID,
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //   },
-    // },
+
     {
       resolve: `gatsby-source-instagram`,
       options: {
